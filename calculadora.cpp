@@ -120,14 +120,22 @@ void calculadora::onIgual(){
     }
     QString res;
     iss >> b;
-    if(simb == '+'){
-        res = QString::number(a+b);
-    }if(simb == '-'){
-        res = QString::number(a-b);
-    }if(simb == '/'){
-        res = QString::number(a/b);
-    }if(simb == '*'){
-        res = QString::number(a*b);
+
+
+    if(a >=0 && b>=0){
+        if(simb == '+'){
+            res = QString::number(a+b);
+        }if(simb == '-'){
+            res = QString::number(a-b);
+        }if(simb == '/'){
+            res = QString::number(a/b);
+        }if(simb == '*'){
+            res = QString::number(a*b);
+        }
     }
+
+
+
     ui.ldtext -> setText(res);
+
 }

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>373</width>
+    <height>478</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,17 +20,29 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>50</y>
+      <x>20</x>
+      <y>20</y>
       <width>341</width>
       <height>72</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QTextEdit" name="ldtext">
+       <property name="maximumSize">
+        <size>
+         <width>253</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="font">
         <font>
+         <family>Arial</family>
          <pointsize>20</pointsize>
         </font>
        </property>
@@ -47,6 +59,12 @@
          <height>71</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>C</string>
        </property>
@@ -57,11 +75,17 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>159</x>
-      <y>130</y>
-      <width>342</width>
+      <x>20</x>
+      <y>100</y>
+      <width>341</width>
       <height>331</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>20</pointsize>
+     </font>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
@@ -73,6 +97,12 @@
            <width>80</width>
            <height>80</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
          </property>
          <property name="text">
           <string>1</string>
@@ -87,6 +117,12 @@
            <height>80</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>2</string>
          </property>
@@ -100,6 +136,12 @@
            <height>80</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>3</string>
          </property>
@@ -112,6 +154,12 @@
            <width>80</width>
            <height>80</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
          </property>
          <property name="text">
           <string>-</string>
@@ -130,6 +178,12 @@
            <height>80</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>4</string>
          </property>
@@ -142,6 +196,12 @@
            <width>80</width>
            <height>80</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
          </property>
          <property name="text">
           <string>5</string>
@@ -156,6 +216,12 @@
            <height>80</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>6</string>
          </property>
@@ -168,6 +234,12 @@
            <width>80</width>
            <height>80</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
          </property>
          <property name="text">
           <string>/</string>
@@ -186,6 +258,12 @@
            <height>80</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>7</string>
          </property>
@@ -198,6 +276,12 @@
            <width>80</width>
            <height>80</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
          </property>
          <property name="text">
           <string>8</string>
@@ -212,6 +296,12 @@
            <height>80</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>9</string>
          </property>
@@ -225,8 +315,14 @@
            <height>80</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
          <property name="text">
-          <string>X</string>
+          <string>*</string>
          </property>
         </widget>
        </item>
@@ -242,6 +338,12 @@
            <height>80</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>.</string>
          </property>
@@ -254,6 +356,12 @@
            <width>80</width>
            <height>80</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
          </property>
          <property name="text">
           <string>0</string>
@@ -268,6 +376,12 @@
            <height>80</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>=</string>
          </property>
@@ -280,6 +394,12 @@
            <width>80</width>
            <height>80</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>20</pointsize>
+          </font>
          </property>
          <property name="text">
           <string>+</string>
@@ -296,7 +416,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>373</width>
      <height>21</height>
     </rect>
    </property>
