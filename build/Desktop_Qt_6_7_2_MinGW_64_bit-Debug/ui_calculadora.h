@@ -60,17 +60,21 @@ public:
         if (calculadora->objectName().isEmpty())
             calculadora->setObjectName("calculadora");
         calculadora->resize(800, 600);
+        calculadora->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
         centralwidget = new QWidget(calculadora);
         centralwidget->setObjectName("centralwidget");
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(160, 50, 351, 72));
+        layoutWidget->setGeometry(QRect(160, 50, 341, 72));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         ldtext = new QTextEdit(layoutWidget);
         ldtext->setObjectName("ldtext");
-        ldtext->setMaximumSize(QSize(261, 70));
+        QFont font;
+        font.setPointSize(20);
+        ldtext->setFont(font);
+        ldtext->setLayoutDirection(Qt::LayoutDirection::RightToLeft);
 
         horizontalLayout->addWidget(ldtext);
 
@@ -82,7 +86,7 @@ public:
 
         layoutWidget1 = new QWidget(centralwidget);
         layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(159, 130, 351, 331));
+        layoutWidget1->setGeometry(QRect(159, 130, 342, 331));
         verticalLayout = new QVBoxLayout(layoutWidget1);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);

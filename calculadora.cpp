@@ -1,6 +1,9 @@
 #include "calculadora.h"
 #include "ui_calculadora.h"
-
+#include <string>
+#include <iostream>
+#include <sstream>
+#include <QString>
 calculadora::calculadora(QWidget *parent): QMainWindow(parent)
 {
     this ->ui.setupUi(this);
@@ -34,33 +37,97 @@ calculadora::~calculadora()
 }
 //numero funções
 void calculadora::onZero(){
-    this -> ui.ldtext -> setText("0");
+    ui.ldtext -> insertPlainText("0");
 }
 void calculadora::onUm(){
-    this -> ui.ldtext -> setText("1");
+    ui.ldtext -> insertPlainText("1");
 }
 void calculadora::onDois(){
-    this -> ui.ldtext -> setText("2");
+    ui.ldtext -> insertPlainText("2");
 }
 void calculadora::onTres(){
-    this -> ui.ldtext -> setText("3");
+    ui.ldtext ->insertPlainText("3");
 }
 void calculadora::onQuatro(){
-    this -> ui.ldtext -> setText("4");
+    ui.ldtext -> insertPlainText("4");
 }
 void calculadora::onCinco(){
-    this -> ui.ldtext -> setText("5");
+    ui.ldtext -> insertPlainText("5");
 }
 void calculadora::onSeis(){
-    this -> ui.ldtext -> setText("6");
+    ui.ldtext -> insertPlainText("6");
 }
 void calculadora::onSete(){
-    this -> ui.ldtext -> setText("7");
+    ui.ldtext -> insertPlainText("7");
 }
 void calculadora::onOito(){
-    this -> ui.ldtext -> setText("8");
+    ui.ldtext -> insertPlainText("8");
 }
 void calculadora::onNove(){
-    this -> ui.ldtext -> setText("9");
+    ui.ldtext -> insertPlainText("9");
 }
 //Sinais
+void calculadora::onMais(){
+    ui.ldtext -> insertPlainText("+");
+}
+void calculadora::onMenos(){
+    ui.ldtext -> insertPlainText("-");
+}
+void calculadora::onDivisao(){
+    ui.ldtext -> insertPlainText("/");
+}
+void calculadora::onVezes(){
+    ui.ldtext -> insertPlainText("*");
+}
+//ponto
+void calculadora::onPonto(){
+    ui.ldtext -> insertPlainText(".");
+}
+//clear
+void calculadora::onClear(){
+    ui.ldtext -> setText("");
+
+}
+
+//igual
+void calculadora::onIgual(){
+    std::string equacao_string = ui.ldtext -> toPlainText().toStdString();
+    char simb;
+    std::istringstream iss;
+    iss.str(equacao_string);
+    int a,b;
+    iss >> a;
+
+    for(size_t i=0; i < std::strlen(equacao_string.c_str()) ; ++i){
+        if(equacao_string[i] == '+'){
+            simb = '+';
+            iss.ignore(10,'+');
+        }
+        if(equacao_string[i] == '-'){
+            simb = '-';
+            iss.ignore(10,'-');
+        }
+        if(equacao_string[i] == '/'){
+            simb = '/';
+            iss.ignore(10,'/');
+        }
+        if(equacao_string[i] == '*'){
+            simb = '*';
+            iss.ignore(10,'*');
+        }
+
+
+    }
+    QString res;
+    iss >> b;
+    if(simb == '+'){
+        res = QString::number(a+b);
+    }if(simb == '-'){
+        res = QString::number(a-b);
+    }if(simb == '/'){
+        res = QString::number(a/b);
+    }if(simb == '*'){
+        res = QString::number(a*b);
+    }
+    ui.ldtext -> setText(res);
+}

@@ -13,25 +13,22 @@
   <property name="windowTitle">
    <string>calculadora</string>
   </property>
+  <property name="layoutDirection">
+   <enum>Qt::LayoutDirection::LeftToRight</enum>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>160</x>
       <y>50</y>
-      <width>351</width>
+      <width>341</width>
       <height>72</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QTextEdit" name="ldtext">
-       <property name="maximumSize">
-        <size>
-         <width>261</width>
-         <height>70</height>
-        </size>
-       </property>
        <property name="font">
         <font>
          <pointsize>20</pointsize>
@@ -62,7 +59,7 @@
      <rect>
       <x>159</x>
       <y>130</y>
-      <width>351</width>
+      <width>342</width>
       <height>331</height>
      </rect>
     </property>
